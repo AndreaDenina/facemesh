@@ -1,0 +1,30 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.mypy_cache/
+.pytest_cache/
+.venv/
+venv/
+.env
+
+
+# Build
+build/
+dist/
+*.egg-info/
+
+
+# Data / outputs (keep structure, not contents)
+outputs/
+!outputs/.gitkeep
+
