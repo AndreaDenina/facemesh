@@ -25,7 +25,7 @@ cd facemesh
 
 # Create virtual environment
 python3 -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+source venv/bin/activate 
 
 # Install dependencies
 pip install -r requirements.txt
@@ -35,16 +35,17 @@ pip install -r requirements.txt
 
 Place your images in the `data/` folder:
 
-data/samples/input.jpg → the source face
-data/target_face.jpg → the target face
+data/samples/source.jpeg → the source face 
+\
+data/target.jpeg → the target face
 
 Run the program:
 
 ```bash
 python -m facemesh.cli \
-  --src data/samples/input.jpg \
-  --tgt data/target_face.jpg \
-  --out outputs/result.jpg \
+  --src data/samples/source.jpeg \
+  --tgt data/target.jpeg \
+  --out outputs/output.jpg \
   --poisson
 ```
 
